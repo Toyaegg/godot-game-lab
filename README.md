@@ -87,3 +87,35 @@ Experimental Godot Game System Validation
 
 🔳 Flow Field Pathfinding（流量场寻路）
 
+
+### 程序化生成
+
+🔳 Base Procedural Generation（基础程序化生成）
+
+🔳 Voronoi Cell Diagram（维诺细胞图）
+
+🔳 Delaunay Triangulation（德劳内三角形）
+
+🔳 Terrain Generation（地形生成）[山脉，平原，丘陵，河流生成]
+
+🔳 Terrain Feature Generation（地形特征生成）[山脉，丘陵，平原，山谷，峡谷]
+
+🔳 Biome Generation（生物群落生成）[森林，草地，沙漠，山地，平原]
+
+🔳 Geology Generation（地质生成）[岩石，矿物，地质特征]
+
+🔳 Vegetation Generation（植被生成）[树木，花草，灌木]
+
+🔳 Human Settlement Generation（人类定居点生成）[城市，城镇，村庄，社区]
+
+🔳 Relationship Evolution（关系演变）[婚姻，爱情，友情，仇恨]
+
+🔳 Cultural Evolution（文化演变）[宗教，民族，社会，政治]
+
+🔳 Political Division（政治划分）[国家，民族，宗教，社会，政治]
+
+🔳 Cellular Automata（细胞自动机）
+
+🔳 Grid Based Generation（基于网格的生成）
+
+🔳 Hexagonal Grid Based Generation（基于六边形网格的生成）
