@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://mgmhgsj7j51l"]
+
+[ext_resource type="Script" uid="uid://b5rb0beaixlpd" path="res://test/node_2d.gd" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://cx07b02dpq307" path="res://test/balloon.tscn" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0e48y")
+
+[node name="ExampleBalloon" parent="." instance=ExtResource("1_wtcfe")]
+script = null

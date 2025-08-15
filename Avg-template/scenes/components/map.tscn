@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvgc3s8ef56mh"]
+
+[ext_resource type="Texture2D" uid="uid://deso1gg7iqdek" path="res://assets/images/anemity_screen.png" id="1_ejs61"]
+
+[node name="Map" type="Node2D"]
+position = Vector2(253, 170)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ejs61")

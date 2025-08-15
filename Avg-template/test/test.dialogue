@@ -1,11 +1,11 @@
-~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+~ 测试
+老罗: [[哇|你好|哎呀]], 大大
+老罗: 拉凯迪拉克的
+- 第一个
+	老罗: 选了第一个
+- 第二个
+	老罗: 选了第二个
+- 再来一次 => 测试
+- 结束 => END
+老罗: 口我我我
 => END

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Drama" load_steps=2 format=3 uid="uid://bjrupx8ku53b4"]
+
+[ext_resource type="Script" uid="uid://cni532qk11j2g" path="res://scripts/datas/drama.gd" id="1_atfl0"]
+
+[resource]
+script = ExtResource("1_atfl0")
+metadata/_custom_type_script = "uid://cni532qk11j2g"
