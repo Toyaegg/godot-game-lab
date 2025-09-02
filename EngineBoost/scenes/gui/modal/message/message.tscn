@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjq545rxxmjm3"]
+
+[ext_resource type="PackedScene" uid="uid://kjtsvwaqgvx" path="res://scenes/gui/modal/modal.tscn" id="1_m5r75"]
+[ext_resource type="Script" uid="uid://xycjvnhk16rm" path="res://scenes/gui/modal/modal.gd" id="2_3fbqy"]
+
+[node name="Modal" instance=ExtResource("1_m5r75")]
+script = ExtResource("2_3fbqy")
+
+[node name="Content" type="RichTextLabel" parent="Back/Control/MainContainer/Container" index="0"]
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

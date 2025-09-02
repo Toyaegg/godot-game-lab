@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4ewoha36nlid"]
+
+[ext_resource type="Script" uid="uid://nnt10kk8mpek" path="res://scenes/initialize/initialize.gd" id="1_5f4mw"]
+
+[node name="Initialize" type="Node"]
+script = ExtResource("1_5f4mw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
