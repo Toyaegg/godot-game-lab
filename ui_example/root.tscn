@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb7vpehr4r2rr"]
+
+[ext_resource type="Script" uid="uid://b4ihqw6r07gsw" path="res://root.gd" id="1_pq8q7"]
+
+[node name="Root" type="Node" node_paths=PackedStringArray("UIRoot")]
+script = ExtResource("1_pq8q7")
+UIRoot = NodePath("UIRoot")
+
+[node name="UIRoot" type="CanvasLayer" parent="."]

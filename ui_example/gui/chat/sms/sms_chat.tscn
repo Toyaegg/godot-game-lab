@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpnwreqysghqx"]
+
+[ext_resource type="PackedScene" uid="uid://fbr0decx4vjm" path="res://scenes/gui/chat/chat.tscn" id="1_a6nmu"]
+
+[node name="Chat" instance=ExtResource("1_a6nmu")]

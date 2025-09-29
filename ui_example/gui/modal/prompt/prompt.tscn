@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcdlvp3llf7sy"]
+
+[ext_resource type="PackedScene" uid="uid://kjtsvwaqgvx" path="res://scenes/gui/modal/modal.tscn" id="1_ym8c5"]
+[ext_resource type="Script" uid="uid://xycjvnhk16rm" path="res://scenes/gui/modal/modal.gd" id="2_i72rd"]
+
+[node name="Modal" instance=ExtResource("1_ym8c5")]
+script = ExtResource("2_i72rd")
+
+[node name="Content" type="TextEdit" parent="Back/Control/MainContainer/Container" index="0"]
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30

@@ -15,9 +15,28 @@ run/main_scene="uid://b4ewoha36nlid"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CoreSystem="*res://addons/godot_core_system/source/core_system.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [dotnet]
 
 project/assembly_name="engine_boost"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_core_system/plugin.cfg", "res://addons/gut/plugin.cfg")
+
+[gui]
+
+theme/custom_font="uid://dnyjt3itv86jv"
 
 [rendering]
 
