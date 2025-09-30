@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=3 uid="uid://br57drdfa4dsr"]
+
+[ext_resource type="Script" uid="uid://baviti34gyq7c" path="res://subgui/tip/Tip.cs" id="1_kvmm6"]
+[ext_resource type="StyleBox" uid="uid://uxdriq43hiuj" path="res://assets/styles/menu_panel_style/style_tip_panel.tres" id="2_vrucp"]
+[ext_resource type="StyleBox" uid="uid://bj6qvgvvug6my" path="res://assets/styles/menu_panel_style/style_tip_content.tres" id="3_ma0ym"]
+[ext_resource type="StyleBox" uid="uid://utgl2haqkgeb" path="res://assets/styles/menu_button_style/style_menu_btn_disabled.tres" id="3_vrucp"]
+[ext_resource type="StyleBox" uid="uid://dhqec06kwpr5d" path="res://assets/styles/menu_button_style/style_menu_btn_hover.tres" id="4_ma0ym"]
+[ext_resource type="StyleBox" uid="uid://c2rvys7pqutiq" path="res://assets/styles/menu_button_style/style_menu_btn_pressed.tres" id="5_mb516"]
+[ext_resource type="StyleBox" uid="uid://c431wjfg5ctd0" path="res://assets/styles/menu_button_style/style_menu_btn_normal.tres" id="6_q3t4v"]
+
+[node name="Tip" type="Control" node_paths=PackedStringArray("Title", "Content", "ConfirmBtn", "CancelBtn")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kvmm6")
+Title = NodePath("Panel/MarginContainer/VBoxContainer/Title")
+Content = NodePath("Panel/MarginContainer/VBoxContainer/Panel/MarginContainer/Content")
+ConfirmBtn = NodePath("Panel/MarginContainer/VBoxContainer/Buttons/Confirm")
+CancelBtn = NodePath("Panel/MarginContainer/VBoxContainer/Buttons/Cancel")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_vrucp")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.582182, 0.129141, 0.685435, 1)
+theme_override_colors/font_outline_color = Color(1, 0.983072, 0.975891, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 25
+text = "提示"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_ma0ym")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/VBoxContainer/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Content" type="Label" parent="Panel/MarginContainer/VBoxContainer/Panel/MarginContainer"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.891115, 0.69428, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0.255909, 0.177251, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 20
+text = "内容"
+vertical_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="Confirm" type="Button" parent="Panel/MarginContainer/VBoxContainer/Buttons"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 20
+theme_override_styles/disabled = ExtResource("3_vrucp")
+theme_override_styles/hover = ExtResource("4_ma0ym")
+theme_override_styles/pressed = ExtResource("5_mb516")
+theme_override_styles/normal = ExtResource("6_q3t4v")
+text = "确认"
+
+[node name="Cancel" type="Button" parent="Panel/MarginContainer/VBoxContainer/Buttons"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 20
+theme_override_styles/disabled = ExtResource("3_vrucp")
+theme_override_styles/hover = ExtResource("4_ma0ym")
+theme_override_styles/pressed = ExtResource("5_mb516")
+theme_override_styles/normal = ExtResource("6_q3t4v")
+text = "取消"

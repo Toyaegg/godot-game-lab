@@ -1,0 +1,438 @@
+[gd_scene load_steps=18 format=3 uid="uid://cpg2fbixxyba8"]
+
+[ext_resource type="Script" uid="uid://dhvo4b257a822" path="res://gui/menu/Menu.cs" id="1_w62fw"]
+[ext_resource type="Texture2D" uid="uid://b4t7ng1r3sbra" path="res://assets/images/ui/Clouds 3/1.png" id="2_5kbso"]
+[ext_resource type="Texture2D" uid="uid://c4bfq2i6fcbb2" path="res://assets/images/ui/Clouds 3/2.png" id="3_j5dum"]
+[ext_resource type="Texture2D" uid="uid://bhdx6i2ssj2uo" path="res://assets/images/ui/Clouds 3/3.png" id="4_xdghv"]
+[ext_resource type="Texture2D" uid="uid://ddh578ynlds2q" path="res://assets/images/ui/Clouds 3/4.png" id="5_qc485"]
+[ext_resource type="Script" uid="uid://d2fbelmubljus" path="res://addons/richtext2/text_effects/anims/rte_offin.gd" id="6_1imr6"]
+[ext_resource type="Script" uid="uid://ccgwrqxexuujh" path="res://addons/richtext2/text_effects/effects/rte_wack.gd" id="7_i1v85"]
+[ext_resource type="Script" uid="uid://p802ckrdl6sg" path="res://addons/richtext2/rich_text_animation.gd" id="8_dvi2q"]
+[ext_resource type="StyleBox" uid="uid://utgl2haqkgeb" path="res://assets/styles/menu_button_style/style_menu_btn_disabled.tres" id="9_1imr6"]
+[ext_resource type="StyleBox" uid="uid://c431wjfg5ctd0" path="res://assets/styles/menu_button_style/style_menu_btn_normal.tres" id="9_5kbso"]
+[ext_resource type="StyleBox" uid="uid://bc2fpwxgh66dg" path="res://assets/styles/menu_panel_style/style_menu_panel.tres" id="9_i1v85"]
+[ext_resource type="StyleBox" uid="uid://dhqec06kwpr5d" path="res://assets/styles/menu_button_style/style_menu_btn_hover.tres" id="10_i1v85"]
+[ext_resource type="StyleBox" uid="uid://c2rvys7pqutiq" path="res://assets/styles/menu_button_style/style_menu_btn_pressed.tres" id="11_dvi2q"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_1imr6"]
+resource_name = "offin"
+script = ExtResource("6_1imr6")
+metadata/rt = 2965909896377
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_i1v85"]
+resource_name = "wack"
+script = ExtResource("7_i1v85")
+metadata/rt = 2965909896377
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_dvi2q"]
+resource_name = "offin"
+script = ExtResource("6_1imr6")
+metadata/rt = 3063284858081
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_s8ara"]
+resource_name = "wack"
+script = ExtResource("7_i1v85")
+metadata/rt = 3063284858081
+
+[node name="Menu" type="Control" node_paths=PackedStringArray("StartBtn", "ContinueBtn", "LoadBtn", "SettingBtn", "CreditsBtn", "ExitBtn", "Content", "News", "Version")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w62fw")
+StartBtn = NodePath("MenuButtons/Start")
+ContinueBtn = NodePath("MenuButtons/Continue")
+LoadBtn = NodePath("MenuButtons/Load")
+SettingBtn = NodePath("MenuButtons/Setting")
+CreditsBtn = NodePath("MenuButtons/Credits")
+ExitBtn = NodePath("MenuButtons/Exit")
+Content = NodePath("News/Container/View/Scroller/Content")
+News = NodePath("News/Container/View/Scroller/Content/News")
+Version = NodePath("Version")
+
+[node name="Background" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sky" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5kbso")
+
+[node name="Moon" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_j5dum")
+
+[node name="Cloud1" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_xdghv")
+
+[node name="Cloud2" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_qc485")
+
+[node name="Title" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -621.0
+offset_top = 37.0
+offset_right = -34.0
+offset_bottom = 319.0
+grow_horizontal = 0
+
+[node name="MainTitle" type="RichTextLabel" parent="Title"]
+clip_contents = false
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 0
+offset_left = 96.0
+offset_top = 18.0
+offset_right = 530.0
+offset_bottom = 157.0
+theme_override_colors/font_outline_color = Color(0.19999999, 0.19999999, 0.19999999, 1)
+theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/bold_font_size = 100
+theme_override_font_sizes/bold_italics_font_size = 100
+theme_override_font_sizes/italics_font_size = 100
+theme_override_font_sizes/mono_font_size = 100
+bbcode_enabled = true
+fit_content = true
+custom_effects = [SubResource("RichTextEffect_1imr6"), SubResource("RichTextEffect_i1v85")]
+script = ExtResource("8_dvi2q")
+animation = "offin"
+progress = 1.0
+visible_character = 4
+_transforms = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1.1181806, 0.011543053, -0.011543053, 1.1181806, 215.97491, 102.7231), Transform2D(1.0487027, -0.20011614, 0.20011614, 1.0487027, 317.99118, 103.93697), Transform2D(1.0008554, -0.12219388, 0.12219388, 1.0008554, 317.8363, 102.98345)])
+_char_size = Array[Vector2]([Vector2(0, 0), Vector2(0, 76), Vector2(0, 76), Vector2(99, 76)])
+_alpha = Array[float]([1.0, 1.0, 1.0, 1.0])
+_alpha_goal = Array[float]([1.0, 1.0, 1.0, 1.0])
+_forced_finish_delay = -0.0236193
+animation = "offin"
+default_wait_time = 1.0
+play_on_bbcode = true
+play_speed = 10.0
+fade_out = false
+fade_in_speed = 10.0
+fade_out_speed = 120.0
+ctc_offset = Vector2(1, -0.5)
+ctc_on_finished = false
+ctc_on_wait = false
+shortcut_expression = true
+shortcut_bookmark = true
+signal_quotes = true
+signal_stars = true
+bbcode = "[wack][color=FF1493]魔女[]小店[]"
+effects = 2
+alignment = 1
+color = Color(1, 1, 1, 1)
+emoji_scale = 1.0
+font = ""
+font_auto_setup = true
+font_size = 100
+font_bold_weight = 1.5
+font_italics_slant = 0.25
+font_italics_weight = -0.25
+shadow_enabled = false
+shadow_offset = 0.08
+shadow_alpha = 0.25
+shadow_outline_size = 0.1
+outline_size = 0
+outline_mode = 1
+outline_adjust = 0.8
+outline_hue_adjust = 0.0125
+nicer_quotes_enabled = true
+nicer_quotes_format = "“%s”"
+markdown_enabled = true
+markdown_format_bold = "[b]%s[]"
+markdown_format_italics = "[i]%s[]"
+markdown_format_bold_italics = "[bi]%s[]"
+markdown_format_highlight = "[green;sin]%s[]"
+markdown_format_bold2 = "[b]*%s*[]"
+markdown_format_italics2 = "[i;gray]*%s*[]"
+markdown_format_bold_italics2 = "%s"
+context_enabled = true
+context_path = NodePath("/root/State")
+context_state = {}
+context_rich_objects = true
+context_rich_ints = true
+context_rich_array = true
+autostyle_numbers = true
+autostyle_numbers_tag = "[salmon]%s[]"
+autostyle_numbers_pad_decimals = true
+autostyle_numbers_decimals = 2
+autostyle_emojis = true
+effect_weight = 0.0
+meta_auto_https = true
+meta_cursor = 2
+override_bbcodeEnabled = true
+override_clipContents = false
+override_fitContent = true
+fit_width = false
+fit_width_padding = 10
+metadata/_custom_type_script = "uid://p802ckrdl6sg"
+metadata/rand = Array[int]([3449366976, 3752609054, 2345612708, 639019379])
+
+[node name="SubTitle" type="RichTextLabel" parent="Title"]
+clip_contents = false
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 0
+offset_left = 96.0
+offset_top = 180.0
+offset_right = 530.0
+offset_bottom = 216.0
+theme_override_colors/font_outline_color = Color(0.19999999, 0.19999999, 0.19999999, 1)
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+fit_content = true
+custom_effects = [SubResource("RichTextEffect_dvi2q"), SubResource("RichTextEffect_s8ara")]
+script = ExtResource("8_dvi2q")
+animation = "offin"
+progress = 1.0
+visible_character = 9
+_transforms = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1.1181806, 0.011543053, -0.011543053, 1.1181806, 165.97491, 21.723103), Transform2D(1.0487027, -0.20011614, 0.20011614, 1.0487027, 187.99118, 22.936977), Transform2D(1.0008554, -0.12219388, 0.12219388, 1.0008554, 207.83629, 21.983454), Transform2D(0.9864847, -0.0052411244, 0.0052411244, 0.9864847, 227.14429, 20.948673), Transform2D(0.99582845, 0.0013853759, -0.0013853759, 0.99582845, 247.02382, 20.960133), Transform2D(1.0170853, -0.09761726, 0.09761726, 1.0170853, 267.53687, 21.898827), Transform2D(0.94051355, -0.19779907, 0.19779907, 0.94051355, 288.8407, 22.171936), Transform2D(1.0273006, -0.24141712, 0.24141712, 1.0273006, 288.4474, 23.119713)])
+_char_size = Array[Vector2]([Vector2(0, 0), Vector2(0, 15), Vector2(0, 15), Vector2(0, 15), Vector2(0, 15), Vector2(0, 15), Vector2(0, 15), Vector2(0, 15), Vector2(22, 15)])
+_alpha = Array[float]([1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
+_alpha_goal = Array[float]([1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
+_forced_finish_delay = -0.0236193
+animation = "offin"
+default_wait_time = 1.0
+play_on_bbcode = true
+play_speed = 10.0
+fade_out = false
+fade_in_speed = 10.0
+fade_out_speed = 120.0
+ctc_offset = Vector2(1, -0.5)
+ctc_on_finished = false
+ctc_on_wait = false
+shortcut_expression = true
+shortcut_bookmark = true
+signal_quotes = true
+signal_stars = true
+bbcode = "[wack]和[color=9932CC]侵蚀体[]作战的日子[]"
+effects = 2
+alignment = 1
+color = Color(1, 1, 1, 1)
+emoji_scale = 1.0
+font = ""
+font_auto_setup = true
+font_size = 20
+font_bold_weight = 1.5
+font_italics_slant = 0.25
+font_italics_weight = -0.25
+shadow_enabled = false
+shadow_offset = 0.08
+shadow_alpha = 0.25
+shadow_outline_size = 0.1
+outline_size = 0
+outline_mode = 1
+outline_adjust = 0.8
+outline_hue_adjust = 0.0125
+nicer_quotes_enabled = true
+nicer_quotes_format = "“%s”"
+markdown_enabled = true
+markdown_format_bold = "[b]%s[]"
+markdown_format_italics = "[i]%s[]"
+markdown_format_bold_italics = "[bi]%s[]"
+markdown_format_highlight = "[green;sin]%s[]"
+markdown_format_bold2 = "[b]*%s*[]"
+markdown_format_italics2 = "[i;gray]*%s*[]"
+markdown_format_bold_italics2 = "%s"
+context_enabled = true
+context_path = NodePath("/root/State")
+context_state = {}
+context_rich_objects = true
+context_rich_ints = true
+context_rich_array = true
+autostyle_numbers = true
+autostyle_numbers_tag = "[salmon]%s[]"
+autostyle_numbers_pad_decimals = true
+autostyle_numbers_decimals = 2
+autostyle_emojis = true
+effect_weight = 0.0
+meta_auto_https = true
+meta_cursor = 2
+override_bbcodeEnabled = true
+override_clipContents = false
+override_fitContent = true
+fit_width = false
+fit_width_padding = 10
+metadata/_custom_type_script = "uid://p802ckrdl6sg"
+metadata/rand = Array[int]([3449366976, 3752609054, 2345612708, 639019379])
+
+[node name="News" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 67.0
+offset_top = 51.0
+offset_right = 965.0
+offset_bottom = 312.0
+
+[node name="Container" type="Panel" parent="News"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("9_i1v85")
+
+[node name="View" type="MarginContainer" parent="News/Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Scroller" type="ScrollContainer" parent="News/Container/View"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="News/Container/View/Scroller"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="News" type="Label" parent="News/Container/View/Scroller/Content"]
+visible = false
+layout_mode = 2
+
+[node name="MenuButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 71.0
+offset_top = 382.0
+offset_right = -1169.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Start" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "开始游戏"
+
+[node name="Continue" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "继续游戏"
+
+[node name="Load" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "读取游戏"
+
+[node name="Setting" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "设置"
+
+[node name="Credits" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "鸣谢"
+
+[node name="Exit" type="Button" parent="MenuButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("9_5kbso")
+theme_override_styles/pressed = ExtResource("11_dvi2q")
+theme_override_styles/hover = ExtResource("10_i1v85")
+theme_override_styles/disabled = ExtResource("9_1imr6")
+text = "退出游戏"
+
+[node name="Version" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0.545098)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -265.0
+offset_top = -34.0
+offset_right = -12.0
+offset_bottom = -11.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "v458.365.258.11"
+horizontal_alignment = 2

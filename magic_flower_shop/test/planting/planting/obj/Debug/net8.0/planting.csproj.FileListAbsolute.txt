@@ -1,0 +1,14 @@
+D:\godot_project\magic-flower-shop\test\planting\planting\bin\Debug\net8.0\planting.exe
+D:\godot_project\magic-flower-shop\test\planting\planting\bin\Debug\net8.0\planting.deps.json
+D:\godot_project\magic-flower-shop\test\planting\planting\bin\Debug\net8.0\planting.runtimeconfig.json
+D:\godot_project\magic-flower-shop\test\planting\planting\bin\Debug\net8.0\planting.dll
+D:\godot_project\magic-flower-shop\test\planting\planting\bin\Debug\net8.0\planting.pdb
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.GeneratedMSBuildEditorConfig.editorconfig
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.AssemblyInfoInputs.cache
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.AssemblyInfo.cs
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.csproj.CoreCompileInputs.cache
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.dll
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\refint\planting.dll
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.pdb
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\planting.genruntimeconfig.cache
+D:\godot_project\magic-flower-shop\test\planting\planting\obj\Debug\net8.0\ref\planting.dll

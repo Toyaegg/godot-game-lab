@@ -1,0 +1,89 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[addons]
+
+resources_spreadsheet_view/array_color_tint=100.0
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/resource_preview_size=32.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
+resources_spreadsheet_view/context_menu_on_leftclick=false
+quick_scenes/quick_run_shortcut=Object(Shortcut,"resource_local_to_scene":false,"resource_name":"","events":[Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194340,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+],"script":null)
+
+quick_scenes/selected_scene=-1
+resources_spreadsheet_view/fold_docks=false
+simple_todo/text_data_file="res://todo/TODO.cfg"
+simple_todo/image_data_file="res://todo/TODO.bin"
+
+[application]
+
+config/name="魔女小店"
+config/name_localized={
+"en": "Magica Shop",
+"zh": "魔女小店"
+}
+config/description="魔女小店是一款以模拟经营为主的，辅以类幸存者的战斗玩法的游戏。"
+config/version="2024-0.0.0.1-dev"
+run/main_scene="res://bs_game/entry/application.tscn"
+config/features=PackedStringArray("4.5", "C#", "Forward Plus")
+run/max_fps=120
+boot_splash/bg_color=Color(0.204768, 0.0893401, 0.200531, 1)
+config/icon="res://icon.svg"
+
+[autoload]
+
+ModLoaderStore="*res://addons/mod_loader/mod_loader_store.gd"
+ModLoader="*res://addons/mod_loader/mod_loader.gd"
+DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+Questify="*res://addons/questify/quest_manager.gd"
+
+[dialogue_manager]
+
+runtime/advanced/uses_dotnet=true
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/resizable=false
+window/size/window_width_override="1280"
+window/size/window_height_override="720"
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="魔女小店"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Godot-Saveable/plugin.cfg", "res://addons/ProjectResolution/plugin.cfg", "res://addons/RadialMenu/plugin.cfg", "res://addons/SimpleTODO/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_state_charts/plugin.cfg", "res://addons/mod_loader/_export_plugin/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/questify/plugin.cfg", "res://addons/resources_spreadsheet_view/plugin.cfg")
+
+[input]
+
+toggle_arch_entity_debugger={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":true,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+]
+}
+
+[questify]
+
+general/update_polling=true
+general/update_interval=0.5
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

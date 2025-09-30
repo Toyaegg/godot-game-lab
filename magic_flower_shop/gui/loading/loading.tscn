@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwvlaf636bggv"]
+
+[ext_resource type="Script" uid="uid://cc1sksv6yvh02" path="res://gui/loading/Loading.cs" id="1_227a5"]
+[ext_resource type="StyleBox" uid="uid://yfriso4tghap" path="res://assets/styles/progress/loading_progress_back.tres" id="1_l4qxn"]
+[ext_resource type="StyleBox" uid="uid://dhib4vhe4po31" path="res://assets/styles/progress/loading_progress_fill.tres" id="2_227a5"]
+
+[node name="Loading" type="Control" node_paths=PackedStringArray("PgBar")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_227a5")
+PgBar = NodePath("ProgressBar")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.103744, 0.103744, 0.103744, 1)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(900, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -450.0
+offset_top = -74.295
+offset_right = 450.0
+offset_bottom = -47.295
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.944936, 0.853232, 0.942068, 1)
+theme_override_colors/font_outline_color = Color(0.322958, 0.138205, 0.325936, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/background = ExtResource("1_l4qxn")
+theme_override_styles/fill = ExtResource("2_227a5")

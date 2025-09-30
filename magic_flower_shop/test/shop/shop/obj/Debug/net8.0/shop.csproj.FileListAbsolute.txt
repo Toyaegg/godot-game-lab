@@ -1,0 +1,14 @@
+D:\godot_project\magic-flower-shop\test\shop\shop\bin\Debug\net8.0\shop.exe
+D:\godot_project\magic-flower-shop\test\shop\shop\bin\Debug\net8.0\shop.deps.json
+D:\godot_project\magic-flower-shop\test\shop\shop\bin\Debug\net8.0\shop.runtimeconfig.json
+D:\godot_project\magic-flower-shop\test\shop\shop\bin\Debug\net8.0\shop.dll
+D:\godot_project\magic-flower-shop\test\shop\shop\bin\Debug\net8.0\shop.pdb
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.GeneratedMSBuildEditorConfig.editorconfig
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.AssemblyInfoInputs.cache
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.AssemblyInfo.cs
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.csproj.CoreCompileInputs.cache
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.dll
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\refint\shop.dll
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.pdb
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\shop.genruntimeconfig.cache
+D:\godot_project\magic-flower-shop\test\shop\shop\obj\Debug\net8.0\ref\shop.dll
