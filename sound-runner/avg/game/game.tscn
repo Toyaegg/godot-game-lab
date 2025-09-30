@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://blo5rj4bosncm"]
+
+[ext_resource type="PackedScene" uid="uid://bjwbb3ntjvcxv" path="res://avg/ui/balloon.tscn" id="1_l1rk1"]
+
+[node name="Game" type="Node"]
+
+[node name="ExampleBalloon" parent="." instance=ExtResource("1_l1rk1")]

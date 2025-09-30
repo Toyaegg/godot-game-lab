@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://06006803wa5n"]
+
+[ext_resource type="Script" uid="uid://t5llrt4ure6" path="res://runner/ui/initialize/initialize.gd" id="1_n4pa6"]
+
+[node name="Initialize" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n4pa6")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 506.0
+offset_top = 224.0
+offset_right = 894.0
+offset_bottom = 340.0
+text = "init"
