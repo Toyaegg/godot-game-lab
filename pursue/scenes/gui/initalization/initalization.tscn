@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://b534limetopjj"]
 
-[node name="Initalization" type="Control"]
+[ext_resource type="Script" uid="uid://cbuncw0mw88fn" path="res://scenes/gui/initalization/initalization.gd" id="1_knqdm"]
+
+[node name="Initalization" type="Control" unique_id=1375194414]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_knqdm")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1563974002]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0807833, 0.0807833, 0.0807833, 1)
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1845941356]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

@@ -2,7 +2,7 @@ extends Node
 class_name GameManager
 
 func _ready() -> void:
-	var inital:PackedScene = load("res://scenes/gui/initalization.tscn")
+	var inital:PackedScene = load("res://scenes/gui/initalization/initalization.tscn")
 	# 初始化UIManager
 	# TODO 添加UIManager
 	# 打开初始化界面，播放开发者logo

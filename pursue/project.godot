@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Avg-Template"
+config/name="Pursue"
 run/main_scene="uid://dfic13oguvogu"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
@@ -28,7 +28,9 @@ SoundManager="*uid://b4g6yl5lk7fvr"
 
 [dialogue_manager]
 
-runtime/balloon_path="res:///balloon.tscn"
+runtime/balloon_path="uid://cx07b02dpq307"
+editor/wrap_long_lines=true
+editor/translations/default_csv_locale="zh"
 
 [dotnet]
 
@@ -40,7 +42,7 @@ enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/di
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://test/test.dialogue", "res://datas/dialogues/prologue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://datas/dialogues/prologue.dialogue", "res://test/test.dialogue")
 
 [rendering]
 
