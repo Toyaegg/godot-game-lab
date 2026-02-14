@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://nidycblc6ntm"]
+[gd_scene format=3 uid="uid://nidycblc6ntm"]
 
 [ext_resource type="Script" uid="uid://chiuyut5yxie4" path="res://bs_game/entry/Initialize.cs" id="1_g2mhb"]
 
-[node name="Application" type="Node"]
+[node name="Application" type="Node" unique_id=52708]
 script = ExtResource("1_g2mhb")

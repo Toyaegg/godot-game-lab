@@ -8,18 +8,23 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="sound-runner"
+config/name="回音行者"
+config/description="通过回声定位障碍物，玩家自动前进，通过控制上下行动躲避障碍物。"
 run/main_scene="uid://bf5kqigx2cpxa"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-LokGlobalStorageManager="*res://addons/locker/scripts/storage_manager/global_storage_manager.gd"
-SoundManager="*res://addons/sound_manager/sound_manager.gd"
-DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+LokGlobalStorageManager="*uid://bs4rv4bmf6l5f"
+SoundManager="*uid://cf0hae2ikqkvq"
+DebugMenu="*uid://cggqb75a8w8r"
 UIManager="*res://runner/common/ui_manager.gd"
 
 [debug]

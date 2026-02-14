@@ -8,10 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="idle-game-system"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/name="放置类游戏系统"
+config/description="放置类游戏系统，用于在此基础上拓展新玩法。"
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [rendering]

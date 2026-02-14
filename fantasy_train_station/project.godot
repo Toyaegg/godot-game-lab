@@ -8,10 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="fantasy_train_station"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/name="万界站台"
+config/description="作为万界的中转车站，通过与异世界的时空旅客进行互动，获取其愿望或者期望，收取维持车站的能量。"
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [rendering]

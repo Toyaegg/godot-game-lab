@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4ewoha36nlid"]
+[gd_scene format=3 uid="uid://b4ewoha36nlid"]
 
 [ext_resource type="Script" uid="uid://nnt10kk8mpek" path="res://scenes/root/root.gd" id="1_2yu1p"]
 
-[node name="Root" type="Node"]
+[node name="Root" type="Node" unique_id=1591555787]
 script = ExtResource("1_2yu1p")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=222643341]

@@ -14,7 +14,12 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Pursue"
+config/name="蒸汽朋克·瑞克兰德"
+config/name_localized={
+"en": "Pursue"
+}
+config/description="在瑞克兰德大陆，蒸汽科技高度发达的背景下，在此基础上发展的社会矛盾已经到了不可调和的地步，在野心政治家的挑动下，大陆南方联邦与北方国家联合体爆发了战争。
+故事应该讲述在战争中，流离失所的阿丽莎的一生"
 run/main_scene="uid://dfic13oguvogu"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
